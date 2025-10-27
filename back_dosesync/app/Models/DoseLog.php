@@ -26,8 +26,8 @@ class DoseLog extends Model
         return $this->belongsTo(Medication::class);
     }
 
-    public function symptomLogs()
+    public function symptomLog()
     {
-        return $this->hasMany(SymptomLog::class);
+        return $this->hasOne(SymptomLog::class);
     }
 }
